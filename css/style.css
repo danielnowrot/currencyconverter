@@ -3,7 +3,7 @@ html {
 }
 
 *,
-::after ::before {
+::after, ::before {
     box-sizing: inherit
 }
 
@@ -11,11 +11,15 @@ html {
     text-align: center;
     overflow-x: auto;
     max-width: 800px;
-    padding:20px;
+    padding: 20px;
     margin: auto;
     font-family: 'Lato', sans-serif;
     color: rgb(241, 241, 241);
-    background-color: rgb(32, 43, 145);
+    background-image: url("../images/pexels.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .form {
@@ -28,17 +32,22 @@ html {
 
 .form__input {
     max-width: 200px;
+    width: 100%;
     border-width: 2px;
     border-style: solid;
     border-radius: 5px;
     margin-left: 10px;
-    
     padding: 5px;
     border-color: rgb(245, 173, 65);
 }
 
 .form__label {
     margin: 10px;
+}
+
+.form__labelText {
+    display: inline-block;
+    min-width: 200px;
 }
 
 .form__select {

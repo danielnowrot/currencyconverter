@@ -23,18 +23,20 @@
 <body class="body">
     <header class="header">
         <h1 class="header__tittle">
-            Przelicz sobie pieniążki
+            Przelicz sobie pieniążki  
         </h1>
     </header>
     <form class="form js-form">
         <p>
-            <label class="form__label">Wprowadź wartość*:
+            <label class="form__label">
+                <span class="form__labelText">Wprowadź wartość*:</span>
                 <input class="form__input js-inputValue" name="currencyValue" type="number" min="0.01" step="any"
                     placeholder="PLN" required>
             </label>
         </p>
         <p>
-            <label class="form__label">Wybierz walutę:
+            <label class="form__label">
+                <span class="form__labelText">Wybierz walutę:</span>
                 <select class="form__select js-inputCurrency" name="selectCurrency">
                     <option value="EUR">Euro</option>
                     <option value="GBP">Funt brytyjski (szterling)</option>
